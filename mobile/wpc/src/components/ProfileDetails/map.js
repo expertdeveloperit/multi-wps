@@ -37,7 +37,7 @@ class MapComponent extends Component {
               .then((response)=>{ return response.json(); })
               .then((response)=>{
                 var center={lat:position.coords.latitude,lng:position.coords.longitude};
-                  this.setState({center:center})
+                this.setState({center:center,markers:true})
               })
             },
             error => console.log(error)
@@ -62,17 +62,19 @@ class MapComponent extends Component {
     }
   }
   setMarker(center,radius){
+    var image_url=require('../../images/pin-account.svg');
      var image = {
-          url: pin_account,
+          url: require('../../images/pin-account.svg'),
           // This marker is 20 pixels wide by 32 pixels high.
-          size: new google.maps.Size(20, 32),
+          size: new google.maps.Size(40, 52),
           // The origin for this image is (0, 0).
           origin: new google.maps.Point(0, 0),
           // The anchor for this image is the base of the flagpole at (0, 32).
           anchor: new google.maps.Point(0, 32)
         };
+      console.log(image)
       if(this.props.markers){
-
+        console.log('set marker')
       var marker = new google.maps.Marker({
           position: center,
           icon:image,

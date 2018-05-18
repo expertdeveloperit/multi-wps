@@ -1,0 +1,29 @@
+{
+  "name": "wps",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "google-map-react": "^1.0.1",
+    "react": "^16.3.2",
+    "react-accessible-accordion": "^2.3.1",
+    "react-bootstrap": "^0.32.1",
+    "react-css-transition": "^0.7.4",
+    "react-dom": "^16.3.2",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-page-transition": "^3.1.0",
+    "react-router-transition": "^1.2.1",
+    "react-scripts": "1.1.4",
+    "react-slick": "^0.23.1",
+    "react-transition-group": "^2.3.1",
+    "sweetalert-react": "^0.4.11",
+    "universal-cookie": "^2.1.2"
+  },
+  "homepage": "/mobile",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
